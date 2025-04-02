@@ -1,0 +1,265 @@
+:root {
+  --light: white;
+  --dark: black;
+  --accent: yellow;
+  --dark2: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: var(--dark)
+}
+
+p {
+  margin: 0;
+}
+
+#chatbot {
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid var(--light);
+  background-color: var(--light);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+
+#conversation {
+  /*position: relative;*/
+  margin: 0;
+  padding: 10px;
+  height: 600px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#image-cropper-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  alignment: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.message {
+  padding: 6px 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: Rubik;
+  font-size: 16px;
+  width: auto;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+  /*display: block;*/
+  text-align: right;
+
+}
+
+.button-message {
+  background-color: var(--dark2);
+}
+
+/*.button-message button {
+  background-color: var(--dark2);
+  border: none;
+  color: var(--dark);
+}*/
+
+button {
+  font-family: Rubik;
+  /*font-size: 16px;*/
+  font-size: 1rem;
+  padding: 10px;
+  min-width: 60px;
+  border-radius: 5px;
+  border: 2px solid var(--light);;
+  background-color: transparent;
+  color: var(--light);
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+
+button:hover {
+  color: var(--dark2);
+  background-color: var(--light);
+}
+
+button.clicked {
+  color: var(--dark2);
+  background-color: var(--light);
+}
+
+.loader {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-ok {
+  display: block;
+}
+
+.line {
+  margin-bottom: 6px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.reference-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.user-image-cowboy {
+  position: absolute;
+  left: 90px;
+  top: 60px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  z-index: 9999;
+}
+
+.user-image-doctor {
+  position: absolute;
+  left: 145px;
+  top: 90px;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  z-index: 9999;
+}
+
+.user-image-fairy {
+  position: absolute;
+  left: 200px;
+  top: 70px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  z-index: 9999;
+}
+
+.user-image-madhat {
+  position: absolute;
+  left: 160px;
+  top: 150px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  z-index: 9999;
+}
+
+.user-image-hp {
+  position: absolute;
+  left: 140px;
+  top: 60px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  z-index: 9999;
+}
+
+.user-image-pirate {
+  position: absolute;
+  left: 110px;
+  top: 90px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  z-index: 9999;
+}
+
+.user-image-spiderman {
+  position: absolute;
+  left: 180px;
+  top: 20px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  z-index: 9999;
+}
+
+.user-image-witch {
+  position: absolute;
+  left: 140px;
+  top: 95px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  z-index: 9999;
+}
+
+.user-image-wonder {
+  position: absolute;
+  left: 120px;
+  top: 50px;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  z-index: 9999;
+}
+
+.user-image-batman {
+  position: absolute;
+  left: 120px;
+  top: 90px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  z-index: 9999;
+}
+
+/* For screens smaller than 768px (mobile devices) */
+@media (max-width: 767px) {
+  body {
+    background-color: var(--light);
+  }
+
+  #chatbot {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    border-radius: 0;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+  }
+
+  #conversation {
+    height: 100%;
+  }
+
+}
+
+
+
+
