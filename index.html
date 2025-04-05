@@ -1,66 +1,18 @@
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
-  <title>עתידות</title>
-
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:description" content="הבינה המלאכותית שמראה לך איך תראו בעתיד">
-  <meta property="og:image" content="share.png">
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+  <title>עתידות</title>
   <link href="style.css" rel="stylesheet">
-  <link href="welcome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <style>
-  </style>
 </head>
 <body>
-<div id="main-area">
-  <h1 id="logo">AI עתידות</h1>
-  <h3 id="sub-header">
-    הבינה המלאכותית הראשונה מסוגה<br>
-    שמראה לך איך תראו בעתיד
-  </h3>
-  <button id="start-btn" class="welcome-button" onclick="location.href='chatbot.html';">אני רוצה לנסות</button>
-  <button id="overlay-btn">מה זה זה?</button>
+<div id="chatbot">
+  <div id="conversation">
+  </div>
 </div>
-<div class="overlay" id="overlay">
-    <h1>היי שלום</h1>
-    <p>
-      AI PuRIM היא בינה מלאכותית שמלבישה אותך בתחפושות לפורים.<br>
-      הבינה המלאכותית (או כפי שאנחנו קוראים לה בחבר'ה - בינת) משתמשת בטכנולוגיות הכי מתקדמות היום בשוק כדי ליצור היתוך מושלם בין תמונות.<br>
-      התהליך מאוד פשוט:<br>
-      1. מעלים תמונה של הפנים שלך (אל דאגה אנחנו לא שומרים את התמונות. אין לנו שטח אחסון לכל השטויות שלכם)<br>
-      2. בוחרים תחפושת מהרשימה שהכנו<br>
-      3. נהנים<br>
-      <br>
-      ומי אחראי על בינת?<br>
-      אחד בשם גיל כהן שמדבר על עצמו בגוף שלישי.<br>
-
-      ביום גיל הוא פרודקט דיזיינר ובלילה הוא ישן. לפעמים קשה לו לישון. פעם אמרו לו שזה כי כנראה חסר לו מלטונין. אבל מה עכשיו ללכת למעבדת שינה וזה. עדיף לבנות בינות.<br>
-      <br>
-      דברים נוספים שהוא היה שותף אליהם:<br>
-      <a href="https://treenderapp.com"><b>טרינדר</b></a>
-      אפליקציית ההכרויות לעצים<br>
-      <a href="https://knesset.run"><b>      המירוץ לכנסת</b></a>
-      משחק שבו הפוליטקאים באמת רצים בשבילנו.
-    </p>
-    <button id="close-btn">ביי שלום</button>
-</div>
-<script>
-  // JavaScript to handle the overlay
-  const overlayBtn = document.getElementById('overlay-btn');
-  const overlay = document.getElementById('overlay');
-  const closeBtn = document.getElementById('close-btn');
-
-  overlayBtn.addEventListener('click', function() {
-    overlay.style.display = 'flex';
-  });
-
-  closeBtn.addEventListener('click', function() {
-    overlay.style.display = 'none';
-  });
-</script>
+<script src="main.js"></script>
 </body>
 </html>

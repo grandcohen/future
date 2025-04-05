@@ -1,8 +1,8 @@
 :root {
-  --light: white;
-  --dark: black;
-  --accent: yellow;
-  --dark2: black;
+  --light: #e8faf9;
+  --dark: #088a83;
+  --accent: #04c2cc;
+  --dark2: #088a83;
 }
 
 body {

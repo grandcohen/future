@@ -106,6 +106,7 @@ function showUploadButton() {
 
 
   // Create pre-upload message
+  /*
   const messageUploadImage = document.createElement('div');
   messageUploadImage.classList.add('message', 'chatbot');
   const messageUploadP1 = document.createElement('p');
@@ -113,6 +114,7 @@ function showUploadButton() {
   messageUploadImage.appendChild(messageUploadP1);
   conversation.appendChild(messageUploadImage);
   conversation.scrollTop = conversation.scrollHeight;
+  */
 
   // Create button message
   const messageUploadButton = document.createElement('div');
@@ -166,7 +168,7 @@ function showUploadButton() {
 function initPage() {
     const messageHello = document.createElement('div');
     messageHello.classList.add('message', 'chatbot');
-    messageHello.textContent = 'שלום לך';
+    messageHello.textContent = 'שלום לכם';
     conversation.appendChild(messageHello);
     conversation.scrollTop = conversation.scrollHeight;
 
@@ -175,11 +177,11 @@ function initPage() {
     const messageWhoAmI = document.createElement('div');
     messageWhoAmI.classList.add('message', 'chatbot');
     const messageWhoAmI1 = document.createElement('p');
-    const messageWhoAmI2 = document.createElement('p');
-    messageWhoAmI1.textContent = 'אני בינה מלאכותית של הביוקר';
-    messageWhoAmI2.textContent = 'ואני אראה לכם איך תראו בעתיד';
+    //const messageWhoAmI2 = document.createElement('p');
+    messageWhoAmI1.textContent = 'אני בינה מלאכותית שמשתמשת בטכנולוגיה חדשנית כדי להראות לכם איך תראו בעתיד';
+    //messageWhoAmI2.textContent = 'ואני אראה לכם איך תראו בעתיד';
     messageWhoAmI.appendChild(messageWhoAmI1);
-    messageWhoAmI.appendChild(messageWhoAmI2);
+    //messageWhoAmI.appendChild(messageWhoAmI2);
     conversation.appendChild(messageWhoAmI);
     conversation.scrollTop = conversation.scrollHeight;
 
@@ -188,11 +190,11 @@ function initPage() {
       const messageHowDoes = document.createElement('div');
       messageHowDoes.classList.add('message', 'chatbot');
       const messageHowDoes1 = document.createElement('p');
-      const messageHowDoes2 = document.createElement('p');
-      messageHowDoes1.textContent = 'איך אני עובדת?'
-      messageHowDoes2.textContent = 'אני לוקחת את תמונת הפנים שלך ובעזרת מיפוי של הכושלאמא שלך אני יודעת איך תראו בעתיד'
+      //const messageHowDoes2 = document.createElement('p');
+      messageHowDoes1.textContent = 'כדי שאוכל לעשות את זה אני צריכה שתעלו תמונת פנים שלכם'
+      //messageHowDoes2.textContent = 'אל תש '
       messageHowDoes.appendChild(messageHowDoes1);
-      messageHowDoes.appendChild(messageHowDoes2);
+      //messageHowDoes.appendChild(messageHowDoes2);
       conversation.appendChild(messageHowDoes);
       conversation.scrollTop = conversation.scrollHeight;
 
@@ -284,7 +286,7 @@ function showCostumeOptions() {
 
     } else {
       counterTimes++;
-      messageOkUpload.textContent = 'איזה חמאר מה חשבת באתי לעבוד בשבילך??'
+      messageOkUpload.textContent = 'מגיע לכם. זה מה שקורה למי שמקשיב לבוטים באינטרנט'
       conversation.appendChild(messageOkUpload);
       conversation.scrollTop = conversation.scrollHeight;
     }
