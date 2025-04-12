@@ -269,11 +269,7 @@ button.clicked {
 }
 
 .about-text a:visited {
-  color: var(--dark);
-}
-
-a:visited {
-  color: var(--dark);
+  color: var(--dark) !important;
 }
 
 
