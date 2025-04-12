@@ -263,13 +263,13 @@ button.clicked {
 .about-text {
     padding: 3px;
     padding-top: 10px;
-    color: white;
+    color: var(--dark);
     font-size: 0.8em;
     font-family: Rubik;
 }
 
 a:visited {
-  color: white;
+  color: var(--dark);
 }
 
 
