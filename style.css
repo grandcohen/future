@@ -268,8 +268,7 @@ button.clicked {
     font-family: Rubik;
 }
 
-a:visited {
+.about-text a:visited {
   color: var(--dark);
 }
-
 
