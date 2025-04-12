@@ -272,3 +272,8 @@ button.clicked {
   color: var(--dark);
 }
 
+a:visited {
+  color: var(--dark);
+}
+
+
